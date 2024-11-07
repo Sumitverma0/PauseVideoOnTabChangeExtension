@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Pause Video on Tab Change",
+  "version": "1.0",
+  "description": "Pauses video when you switch tabs.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
